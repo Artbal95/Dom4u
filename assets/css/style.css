@@ -1,6 +1,6 @@
 /* General Start*/
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,8 +9,16 @@
     background: #F7F7F7;
 }
 
-section{
+section {
     margin-bottom: 50px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(4px);
 }
 
 /*General End*/
@@ -41,7 +49,7 @@ section{
 }
 
 .basic_title {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -55,7 +63,7 @@ section{
 
 /* Section slide Start */
 
-.img_container{
+.img_container {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -71,7 +79,7 @@ section{
     cursor: pointer;
 }
 
-.owl-dots .slide_dot:last-child{
+.owl-dots .slide_dot:last-child {
     margin: 10px 0 0 0;
 }
 
@@ -96,7 +104,7 @@ section{
     position: relative;
 }
 
-.slide_nav_container{
+.slide_nav_container {
     width: 120%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -107,7 +115,7 @@ section{
     align-items: center;
 }
 
-.slide_nav{
+.slide_nav {
     font-size: 50px;
     color: #304763;;
     background-color: transparent;
@@ -115,7 +123,7 @@ section{
     cursor: pointer;
 }
 
-.slide_nav_index{
+.slide_nav_index {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -127,7 +135,7 @@ section{
 
 /*Section price Start*/
 
-.sec_price{
+.sec_price {
     background-image: url("../img/title/appartment-back.jpg");
     display: flex;
     justify-content: space-between;
@@ -139,7 +147,7 @@ section{
     width: 15%;
 }
 
-.price_title{
+.price_title {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -150,11 +158,11 @@ section{
     width: 30%;
 }
 
-.price_title span{
+.price_title span {
     display: block;
 }
 
-.price_text{
+.price_text {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -166,7 +174,7 @@ section{
     position: relative;
 }
 
-.price_text::after{
+.price_text::after {
     content: "2";
     position: absolute;
     font-family: "Roboto", sans-serif;
@@ -180,19 +188,19 @@ section{
 
 /*Section complex Start*/
 
-.complex_container{
+.complex_container {
     width: 80%;
     margin: 0 auto;
 }
 
-.complex_title{
+.complex_title_header {
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.complex_title_text{
+.complex_title_text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -202,7 +210,7 @@ section{
     color: #0E417C;
 }
 
-table tr td {
+.complex_table_container, .complex_row, .complex_row td {
     border-collapse: collapse;
     border: none;
 }
@@ -211,11 +219,15 @@ table tr td {
     width: 100%;
 }
 
-.complex_row{
+.complex_table {
+    margin-bottom: 25px;
+}
+
+.complex_row {
     height: 90px;
 }
 
-.col_1{
+.col_1 {
     text-align: center;
     margin: 0;
     padding: 10px;
@@ -229,7 +241,7 @@ table tr td {
     color: #0E417C;;
 }
 
-.col_2{
+.col_2 {
     padding: 15px;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -240,9 +252,155 @@ table tr td {
     color: #000000;
 }
 
-.complex_table_container tr:nth-child(odd){
+.complex_table_container tr:nth-child(odd) {
     background-color: white;
+}
+
+.complex_title_footer {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.complex_title_text_footer {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 
 /*Section complex End*/
+
+/*Section consult Start*/
+
+
+.consult_more {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.consult_more_btn {
+    width: 206px;
+    height: 50px;
+    background: #304763;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.consult_title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.consult_title_text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #304763;
+}
+
+.consult_info_title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.consult_info_title_text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #304763;
+}
+
+.consult_info_check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.consult_table_container {
+    background: #304763;
+    border: 2px solid #304763;
+    border-radius: 2px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.consult_col {
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-right: 1px solid white;
+    border-radius: 2px;
+    width: 33%;
+}
+
+.consult_col p {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.consult_col svg {
+    margin-right: 15px;
+}
+
+.consult_row td:last-child {
+    border: none;
+}
+
+.consult_send_info {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info_btn button {
+    width: 240px;
+    height: 60px;
+    border: 2px solid #0E417C;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.info_title {
+    text-align: center;
+    width: 240px;
+}
+
+.info_title p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #304763;
+}
+
+.info_title input {
+    transition: width 1s;
+    border: none;
+    border-bottom: 2px solid #304763;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+/*Section consult End*/

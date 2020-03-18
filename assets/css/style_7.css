@@ -174,7 +174,7 @@ section {
     margin: 0 auto;
 }
 
-.complex_title {
+.complex_title_header {
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
@@ -194,6 +194,10 @@ section {
 table tr td {
     border-collapse: collapse;
     border: none;
+}
+
+.complex_table{
+    margin-bottom: 25px;
 }
 
 .col_1 {
@@ -225,5 +229,153 @@ table tr td {
     background-color: white;
 }
 
+.complex_title_footer {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.complex_title_text_footer {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 /*Section complex End*/
+
+/*Section consult Start*/
+
+
+.consult_more {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.consult_more_btn {
+    width: 206px;
+    height: 50px;
+    background: #304763;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.consult_title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.consult_title_text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #304763;
+}
+
+.consult_info_title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.consult_info_title_text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #304763;
+}
+
+.consult_info_check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    margin: 0 auto;
+}
+
+.consult_table_container {
+    background: #304763;
+    border: 2px solid #304763;
+    border-radius: 2px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.consult_col {
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-right: 1px solid white;
+    border-radius: 2px;
+    width: 33%;
+}
+
+.consult_col p {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.consult_col svg {
+    margin-right: 15px;
+}
+
+.consult_row td:last-child {
+    border: none;
+}
+
+.consult_send_info {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info_btn button {
+    width: 210px;
+    height: 60px;
+    border: 2px solid #0E417C;
+    box-sizing: border-box;
+    margin-bottom: 45px;
+    background-color: #FFFFFF;
+}
+
+.info_title {
+    text-align: center;
+    width: 210px;
+    margin-bottom: 45px;
+}
+
+.info_title p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #304763;
+}
+
+.info_title input {
+    transition: width 1s;
+    border: none;
+    border-bottom: 2px solid #304763;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+/*Section consult End*/
