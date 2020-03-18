@@ -1,0 +1,248 @@
+/* General Start*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.id-wrapper {
+    background: #F7F7F7;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+/*General End*/
+
+/* Section Basic Start */
+
+.basic_container {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/title/basic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.basic_container::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(106, 111, 144, 0.45);
+}
+
+.basic_title {
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Section Basic End */
+
+/* Section slide Start */
+
+.img_container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slide_dot {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    margin: 10px 10px 0 0;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.owl-dots .slide_dot:last-child{
+    margin: 10px 0 0 0;
+}
+
+.owl-dots {
+    width: 120%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: -10%;
+}
+
+.owl-dots .active {
+    border: 1px solid #0E417C;
+}
+
+.slide_container {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide_nav_container{
+    width: 120%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide_nav{
+    font-size: 50px;
+    color: #304763;;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slide_nav_index{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Section slide End */
+
+/*Section price Start*/
+
+.sec_price{
+    background-image: url("../img/title/appartment-back.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.price_img {
+    width: 15%;
+}
+
+.price_title{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 30%;
+}
+
+.price_title span{
+    display: block;
+}
+
+.price_text{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.price_text::after{
+    content: "2";
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/*Section price End*/
+
+/*Section complex Start*/
+
+.complex_container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.complex_title{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complex_title_text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #0E417C;
+}
+
+table tr td {
+    border-collapse: collapse;
+    border: none;
+}
+
+.complex_table_container {
+    width: 100%;
+}
+
+.complex_row{
+    height: 90px;
+}
+
+.col_1{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    width: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #0E417C;;
+}
+
+.col_2{
+    padding: 15px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.complex_table_container tr:nth-child(odd){
+    background-color: white;
+}
+
+
+/*Section complex End*/
