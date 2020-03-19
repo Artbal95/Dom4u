@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
     display: flex;
     justify-content: center;;
     align-items: center;
-    background-image: url("../img/title/basicx768.jpg");
+    background-image: url("../../img/title/basicx768.jpg");
     background-position: center;
     background-size: 100% 100%;
     position: relative;
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 /*Section price Start*/
 
 .sec_price {
-    background-image: url("../img/title/appartment-back.jpg");
+    background-image: url("../../img/title/appartment-back.jpg");
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -417,7 +417,7 @@ table tr td {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     width: 100%;
 }
 
