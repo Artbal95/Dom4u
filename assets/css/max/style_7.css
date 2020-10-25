@@ -1,179 +1,35 @@
-/* General Start*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.id-wrapper {
-    background: #F7F7F7;
-}
-
-section {
-    margin-bottom: 50px;
-}
-
-button {
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-button:active {
-    transform: translateY(4px);
-}
-
-h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-}
-
-/*General End*/
-
-
 /* Section Basic Start */
 
-.basic_container {
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    justify-content: center;;
-    align-items: center;
-    background-image: url("../../img/title/basicx768.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    position: relative;
-}
-
-.basic_container::after {
-    content: "";
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(106, 111, 144, 0.45);
-}
-
 .basic_title {
-    font-weight: 500;
     font-size: 30px;
     line-height: 35px;
-    color: white;
-    text-align: center;
-    z-index: 1;
 }
 
 /* Section Basic End */
 
 /* Section slide Start */
 
-.img_container {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.slide_dot {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #E5E5E5;
-    box-sizing: border-box;
-    margin: 10px 10px 0 0;
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-
-.owl-dots .slide_dot:last-child {
-    margin: 10px 0 0 0;
-}
-
-.owl-dots {
-    width: 120%;
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    left: -10%;
-}
-
-.owl-dots .active {
-    border: 1px solid #0E417C;
-}
-
 .slide_container {
     width: 80%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.slide_nav_container {
-    width: 120%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 40%;
-    left: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.slide_nav {
-    font-size: 50px;
-    color: #304763;;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 
 /* Section slide End */
 
 /*Section price Start*/
 
-.sec_price {
-    background-image: url("../../img/title/appartment-back.jpg");
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.price_img {
-    width: 15%;
-}
-
 .price_title {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    text-transform: uppercase;
-    color: #FFFFFF;
     width: 35%;
 }
 
 .price_text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 36px;
     line-height: 42px;
-    color: #FFFFFF;
-    width: 40%;
-    text-align: center;
-    position: relative;
 }
 
 .price_text::after {
-    content: "2";
-    position: absolute;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 24px;
-    line-height: 30px;
 }
 
 /*Section price End*/
@@ -183,111 +39,21 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 
 .complex_container {
     width: 95%;
-    margin: 0 auto;
-}
-
-.complex_title_header {
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .complex_title_text {
-    font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    text-transform: uppercase;
-    color: #0E417C;
-}
-
-table tr td {
-    border-collapse: collapse;
-    border: none;
-}
-
-.complex_table{
-    margin-bottom: 25px;
-}
-
-.col_1 {
-    text-align: center;
-    margin: 0;
-    width: 15%;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #0E417C;;
 }
 
 .col_2 {
     padding: 5px;
-    box-sizing: border-box;
-    margin: 0;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
+    font-size: 14px;
 }
-
-.complex_table_container tr:nth-child(odd) {
-    background-color: white;
-}
-
-.complex_title_footer {
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.complex_title_text_footer {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-}
-
 
 /*Section complex End*/
 
 /*Section consult Start*/
-
-
-.consult_more {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.consult_more_btn {
-    width: 206px;
-    height: 50px;
-    background: #304763;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.consult_title {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.consult_title_text {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #304763;
-}
-
-.consult_info_title {
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 .consult_info_title_text {
     font-weight: normal;

@@ -13,6 +13,10 @@ section {
     margin-bottom: 50px;
 }
 
+section:last-child{
+    margin: 0;
+}
+
 button {
     cursor: pointer;
     text-transform: uppercase;
@@ -186,6 +190,8 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 
 .complex_container {
     width: 80%;
+    padding: 0 5px;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -218,7 +224,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 }
 
 .complex_row {
-    height: 90px;
+    min-height: 90px;
 }
 
 .col_1 {
@@ -230,12 +236,12 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #0E417C;;
+    color: #0E417C;
 }
 
 .col_2 {
     padding: 15px;
-    margin: 0;
+    box-sizing: border-box;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -269,7 +275,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 }
 
 .consult_more_btn {
-    width: 206px;
+    width: 210px;
     height: 50px;
     background: #304763;
     font-weight: 500;
@@ -277,6 +283,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
     line-height: 15px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .consult_title {
@@ -305,10 +312,13 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 }
 
 .consult_info_check {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    max-width: 500px;
+    padding: 0 5px;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -357,7 +367,6 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
     width: 240px;
     height: 60px;
     border: 2px solid #0E417C;
-    box-sizing: border-box;
     background-color: #FFFFFF;
 }
 
@@ -388,7 +397,6 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 
 
 .sec_footer {
-    margin: 0;
     background-color: #16497E;
     min-height: 300px;
     display: flex;
@@ -419,19 +427,19 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
     margin-bottom: 25px;
 }
 
-.footer_buttom form {
+.footer_button form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.footer_buttom {
+.footer_button {
     width: 100%;
 }
 
-.footer_buttom button {
+.footer_button button {
     width: 240px;
     height: 60px;
     border: 1px solid #FFFFFF;
@@ -467,3 +475,139 @@ h1, h2, h3, h4, h5, h6, div, span, p, input, button, td {
 }
 
 /*Section footer End*/
+
+@media screen and (max-width: 425px){
+    /* Section Basic Start */
+
+    .basic_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .basic_title span {
+        display: block;
+    }
+
+    /* Section Basic End */
+
+    /* Section slide Start */
+
+    .slide_dot {
+        margin: 5px 5px 0 0;
+    }
+
+    .owl-dots .slide_dot:last-child{
+        margin-top: 5px;
+    }
+
+    .slide_container {
+        width: 80%;
+    }
+
+    /* Section slide End */
+
+    /*Section price Start*/
+
+    .price_title{
+        font-size: 14px;
+        line-height: 21px;
+        width: 40%;
+    }
+
+    .price_text{
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .price_text::after{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    /*Section price End*/
+
+    /*Section complex Start*/
+
+
+    .complex_container{
+        width: 100%;
+    }
+
+    .complex_title_text{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .col_1{
+        width: 15%;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .col_2{
+        padding: 5px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .complex_title_text_footer {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    /*Section complex End*/
+
+    /*Section consult Start*/
+
+    .consult_col p {
+        font-size: 16px;
+    }
+
+    .consult_col svg {
+        margin-right: 5px;
+    }
+
+    .info_btn button {
+        width: 220px;
+    }
+
+    .info_title {
+        width: 220px;
+        margin-bottom: 45px;
+    }
+
+    /*Section consult End*/
+
+    /*Section footer Start*/
+
+
+    .sec_footer {
+        padding-top: 40px;
+    }
+
+    .footer_top {
+        justify-content: center;
+    }
+
+    .footer_top_right {
+        text-align: center;
+    }
+
+    .footer_button form {
+        justify-content: center;
+    }
+
+    .footer_button button {
+        width: 220px;
+        height: 45px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .footer_top_left {
+        text-align: center;
+    }
+
+    /*Section footer End*/
+}
