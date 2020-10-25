@@ -23,6 +23,7 @@ $(document).ready(function () {
     /** Slide Owl-carousel End*/
 
     /** Complex Start*/
+
     if (window.matchMedia("(min-width: 768px)").matches) {
         (function complex() {
             const complex = {
@@ -96,6 +97,34 @@ $(document).ready(function () {
             complex.init();
         })();
     }
+
     /** Complex End*/
 
-});
+    /** Consult Start*/
+
+    (function () {
+        const consult = {
+            init() {
+                document.querySelectorAll('.consult_col').forEach(function (td) {
+                    td.addEventListener('click', function () {
+                        consult.removeStyle();
+                        this.style.backgroundColor = 'white';
+                        this.firstElementChild.style.fill = '#304763';
+                        this.lastElementChild.style.color = '#304763';
+                    })
+                })
+            },
+            removeStyle() {
+                document.querySelectorAll('.consult_col').forEach(function (td) {
+                    td.style.backgroundColor = '#304763';
+                    td.firstElementChild.style.fill = 'white';
+                    td.lastElementChild.style.color = 'rgba(255, 255, 255, 0.75)';
+                })
+            }
+        };
+        consult.init()
+    })();
+
+    /** Consult End*/
+})
+;
